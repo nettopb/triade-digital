@@ -39,7 +39,14 @@ Os níveis de acesso e as permissões serão detalhados nos requisitos e impleme
 O ambiente local inicial será XAMPP com PHP e MySQL. Dados utilizados durante o desenvolvimento acadêmico deverão ser fictícios. O uso de dados reais de estudantes dependerá da implementação e validação dos controles de segurança, privacidade, autorização e auditoria aplicáveis.
 
 ## Organização do desenvolvimento
-A composição definida a priori na reunião de 18/11/2026 é de uma dupla. A organização das atividades, decisões e entregas será acompanhada por meio de issues, backlog e quadro Kanban no GitHub.
+## Organização da equipe
+
+- **Responsável pela condução e execução:** usuário responsável pelo projeto, que seguirá coordenando o planejamento e tocando as atividades com apoio do ChatGPT.
+- **Segundo integrante indicado:** Fabrício Melo. Sua participação está registrada de forma *pro forma*; até o momento, não houve comparecimento nem atuação efetiva nas atividades do projeto.
+- **Distribuição prática atual:** planejamento, decisões, desenvolvimento, testes e documentação estão sendo conduzidos pelo responsável pelo projeto, com apoio do ChatGPT como ferramenta. Não atribuir entregas ou contribuições realizadas a Fabrício enquanto não houver participação efetiva.
+- **Revisão:** caso Fabrício passe a participar, as responsabilidades poderão ser redistribuídas e o registro atualizado.
+
+As atividades, decisões e entregas serão acompanhadas por meio de issues, backlog e quadro Kanban no GitHub.
 
 ## Marcos acadêmicos
 - Marco 1 — 02/12/2026: planejamento, repositório, ADR e wireframes.
