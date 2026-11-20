@@ -130,11 +130,11 @@ Este catálogo é uma proposta inicial de indicadores usuais para atender à ori
 ## 8. Pendências de detalhamento
 
 1. **Transferência:** definir a data efetiva da mudança, turma de origem/destino e tratamento de chamadas ainda não lançadas.
-3. **Fórum:** validar se os controles de moderação propostos atendem à dinâmica institucional e definir critérios para ocultação de conteúdo.
-4. **Comunicados:** definir se a confirmação de leitura será exigida de cada responsável individualmente e como tratar responsáveis múltiplos.
-5. **Busca ativa:** detalhar etapas, responsáveis, status e eventual integração com Conselho Tutelar/assistência social.
-6. **Dados anonimizados:** definir técnica de anonimização, limiar mínimo de agregação e prevenção de reidentificação em grupos pequenos.
-7. **Administração de usuários:** definir quem cria, bloqueia e atribui perfis e vínculos institucionais.
+2. **Fórum:** definir quais perfis podem criar/iniciar discussões; validar se os controles de moderação propostos atendem à dinâmica institucional e definir critérios para ocultação de conteúdo.
+3. **Comunicados:** definir se a confirmação de leitura será exigida de cada responsável individualmente e como tratar responsáveis múltiplos.
+4. **Busca ativa:** detalhar etapas, responsáveis, status e eventual integração com Conselho Tutelar/assistência social.
+5. **Dados anonimizados:** definir técnica de anonimização, limiar mínimo de agregação e prevenção de reidentificação em grupos pequenos.
+6. **Administração de usuários:** definir quem cria, bloqueia e atribui perfis e vínculos institucionais.
 
 ## 9. Priorização e escopo
 
