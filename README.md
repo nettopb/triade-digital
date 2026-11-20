@@ -47,5 +47,11 @@ A composição definida a priori na reunião de 18/11/2026 é de uma dupla. A or
 - Marco 3 — 17/02/2027: aplicação integrada, regras avançadas, pipeline de deploy e testes de aceitação.
 - Marco 4 — 17/03/2027: publicação em nuvem, demonstração, manuais e documentação final.
 
+## Planejamento
+
+- [Cronograma de encontros e marcos](docs/cronograma-encontros.md)
+- [Backlog inicial](docs/backlog-inicial.md)
+- [Kanban do Marco 1](docs/kanban-marco-1.md)
+
 ## Status
 Repositório reiniciado. A estrutura de código será criada a partir da definição dos requisitos e da arquitetura PHP.
