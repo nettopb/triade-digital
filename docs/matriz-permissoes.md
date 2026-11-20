@@ -33,7 +33,8 @@ Esta matriz consolida as regras informadas para os cinco perfis. O controle deve
 7. **Publicação de comunicados:** permitida a professor, coordenação e direção.
 8. **Confirmação de leitura:** obrigatória para os comunicados.
 9. **Chat:** horários fixos para toda a escola, das 09h às 10h e das 14h às 15h.
-10. **Fórum:** participa quem for convidado/chamado; quem criou a discussão e convidou os participantes é o moderador.
+10. **Fórum:** participa quem for convidado/chamado; quem criou a discussão e convidou os participantes é o moderador. A moderação básica permite convidar participantes, revogar convites, remover participantes, ocultar/reativar mensagens inadequadas e encerrar/reabrir a discussão. Essas ações ficam restritas ao criador/moderador e devem gerar registro de auditoria.
+11. **Chat:** fora das janelas 09h–10h e 14h–15h, o sistema retorna automaticamente a mensagem de horário de funcionamento.
 
 ## 3. Limites e interpretações
 
