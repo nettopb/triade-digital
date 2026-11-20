@@ -34,6 +34,12 @@ erDiagram
     CALENDARIO_ESCOLAR ||--o{ DIA_CALENDARIO : contem
     ALUNO ||--o{ FREQUENCIA : possui
     TURMA ||--o{ FREQUENCIA : organiza
+    TURMA ||--o{ AVALIACAO : define
+    AVALIACAO ||--o{ NOTA : recebe
+    ALUNO ||--o{ NOTA : obtem
+    TURMA ||--o{ CONTEUDO_AULA : possui
+    TURMA ||--o{ OCORRENCIA : registra
+    ALUNO ||--o{ OCORRENCIA : envolve
     USUARIO ||--o{ FREQUENCIA : lanca
     JUSTIFICATIVA o|--o{ FREQUENCIA : fundamenta
     FREQUENCIA ||--o{ AUDITORIA_FREQUENCIA : possui
@@ -42,7 +48,9 @@ erDiagram
     ALERTA ||--o{ ACAO_BUSCA_ATIVA : acompanha
     USUARIO ||--o{ ACAO_BUSCA_ATIVA : registra
     USUARIO ||--o{ COMUNICADO : publica
-    COMUNICADO ||--o{ COMUNICADO_DESTINATARIO : direciona
+    COMUNICADO ||--o{ COMUNICADO_ESCOLA : direciona
+    COMUNICADO ||--o{ COMUNICADO_TURMA : direciona
+    COMUNICADO ||--o{ COMUNICADO_ALUNO : direciona
     COMUNICADO ||--o{ COMUNICADO_LEITURA : recebe_confirmacao
     RESPONSAVEL ||--o{ COMUNICADO_LEITURA : confirma
     RESPONSAVEL ||--o{ CHAT_CONVERSA : participa
@@ -170,6 +178,36 @@ erDiagram
       text motivo
       datetime alterado_em
     }
+    AVALIACAO {
+      int id PK
+      int turma_id FK
+      int usuario_id FK
+      varchar titulo
+      date data_avaliacao
+      text descricao
+    }
+    NOTA {
+      int id PK
+      int avaliacao_id FK
+      int aluno_id FK
+      decimal valor
+      text observacao
+    }
+    CONTEUDO_AULA {
+      int id PK
+      int turma_id FK
+      int usuario_id FK
+      date data_aula
+      text descricao
+    }
+    OCORRENCIA {
+      int id PK
+      int turma_id FK
+      int aluno_id FK
+      int usuario_id FK
+      date data_ocorrencia
+      text descricao
+    }
     ALERTA {
       int id PK
       int aluno_id FK
@@ -199,11 +237,20 @@ erDiagram
       datetime publicado_em
       varchar status
     }
-    COMUNICADO_DESTINATARIO {
+    COMUNICADO_ESCOLA {
       int id PK
       int comunicado_id FK
-      varchar tipo_destino
-      int destino_id
+      int escola_id FK
+    }
+    COMUNICADO_TURMA {
+      int id PK
+      int comunicado_id FK
+      int turma_id FK
+    }
+    COMUNICADO_ALUNO {
+      int id PK
+      int comunicado_id FK
+      int aluno_id FK
     }
     COMUNICADO_LEITURA {
       int id PK
@@ -268,7 +315,7 @@ erDiagram
       int usuario_moderador_id FK
       varchar tipo_acao
       int mensagem_id FK
-      int participante_id FK
+      int participacao_id FK
       text motivo
       datetime criado_em
     }
@@ -298,6 +345,7 @@ erDiagram
 - JUSTIFICATIVA registra data inicial, duração em dias corridos, data final calculada e descrição. A aplicação consulta DIA_CALENDARIO e associa a justificativa somente às datas letivas com frequência prevista.
 - Não se criam registros de frequência em fins de semana, feriados ou dias sem aula.
 - A frequência mantém a turma original associada ao registro histórico.
+- NOTA, CONTEUDO_AULA e OCORRENCIA representam as informações do diário de classe previstas no RF14; o professor opera somente nas próprias turmas, e as demais consultas seguem as permissões institucionais.
 
 ### 3.4. Alertas e busca ativa
 
@@ -308,7 +356,7 @@ erDiagram
 ### 3.5. Comunicados e confirmação de leitura
 
 - COMUNICADO registra autor, título, conteúdo e estado de publicação.
-- COMUNICADO_DESTINATARIO permite direcionar o comunicado à escola, turma ou aluno, conforme autorização do perfil que publica.
+- COMUNICADO_ESCOLA, COMUNICADO_TURMA e COMUNICADO_ALUNO registram os destinos possíveis (escola, turma ou aluno) com chaves estrangeiras explícitas, conforme autorização do perfil que publica.
 - COMUNICADO_LEITURA registra a confirmação por responsável. A regra exige confirmação de leitura; o tratamento de múltiplos responsáveis permanece pendente.
 - Professor, coordenação e direção podem publicar comunicados. A consulta de indicadores e confirmações respeita a matriz de permissões.
 
@@ -324,7 +372,7 @@ erDiagram
 - Somente usuários convidados podem participar da discussão.
 - O criador da discussão, responsável por chamar/convidar os participantes, é o moderador.
 - CONVITE_FORUM controla convites e respostas; PARTICIPACAO_FORUM registra a participação autorizada.
-- MENSAGEM_FORUM armazena mensagens e respostas. MODERACAO_FORUM audita convites revogados, remoções, ocultação/reativação de mensagens e encerramento/reabertura da discussão.
+- MENSAGEM_FORUM armazena mensagens e respostas. MODERACAO_FORUM audita convites revogados, remoções, ocultação/reativação de mensagens e encerramento/reabertura da discussão. A referência à participação moderada usa a chave da entidade PARTICIPACAO_FORUM.
 - Participantes comuns podem publicar mensagens e respostas, mas não administrar convites nem executar ações de moderação.
 
 ## 4. Restrições preliminares
