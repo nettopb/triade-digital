@@ -39,7 +39,7 @@ Os níveis de acesso e as permissões serão detalhados nos requisitos e impleme
 O ambiente local inicial será XAMPP com PHP e MySQL. Dados utilizados durante o desenvolvimento acadêmico deverão ser fictícios. O uso de dados reais de estudantes dependerá da implementação e validação dos controles de segurança, privacidade, autorização e auditoria aplicáveis.
 
 ## Organização do desenvolvimento
-O projeto será desenvolvido individualmente. O acompanhamento das atividades será realizado por meio de issues, backlog e quadro Kanban no GitHub.
+A composição definida a priori na reunião de 18/11/2026 é de uma dupla. A organização das atividades, decisões e entregas será acompanhada por meio de issues, backlog e quadro Kanban no GitHub.
 
 ## Marcos acadêmicos
 - Marco 1 — 02/12/2026: planejamento, repositório, ADR e wireframes.
