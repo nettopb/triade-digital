@@ -1,6 +1,12 @@
 # Backlog inicial — Projeto 10
 
-A composição definida a priori na reunião de 18/11/2026 é de uma dupla. As atividades de análise, desenvolvimento, testes, documentação e apresentação serão organizadas entre os integrantes, com responsabilidades a detalhar no planejamento da equipe.
+## Organização da equipe
+
+- **Responsável pela condução e execução:** usuário responsável pelo projeto, que seguirá coordenando o planejamento e tocando as atividades com apoio do ChatGPT.
+- **Segundo integrante indicado:** Fabrício Melo. Sua participação está registrada de forma *pro forma*; até o momento, não houve comparecimento nem atuação efetiva nas atividades do projeto.
+- **Distribuição prática atual:** planejamento, decisões, desenvolvimento, testes e documentação estão sendo conduzidos pelo responsável pelo projeto, com apoio do ChatGPT como ferramenta. Não atribuir entregas ou contribuições realizadas a Fabrício enquanto não houver participação efetiva.
+- **Revisão:** caso Fabrício passe a participar, as responsabilidades poderão ser redistribuídas e o registro atualizado.
+
 
 A visão do produto deve contemplar as funcionalidades da descrição-base. A priorização abaixo organiza as entregas acadêmicas, mas não elimina funcionalidades do escopo pretendido.
 
