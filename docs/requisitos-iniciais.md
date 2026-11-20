@@ -45,8 +45,9 @@ O controle de acesso deverá ser aplicado no servidor, em cada operação e cons
 - **RF15 — Publicação de comunicados:** permitir que professor, coordenação e direção publiquem comunicados.
 - **RF16 — Segmentação de comunicados:** permitir direcionar comunicados à escola, a uma turma ou a um aluno, conforme a finalidade e a permissão do autor.
 - **RF17 — Confirmação de leitura obrigatória:** exigir confirmação de leitura dos comunicados pelos destinatários e disponibilizar estado/indicadores de leitura aos perfis autorizados.
-- **RF18 — Chat com responsáveis:** disponibilizar chat web para atendimento aos responsáveis, respeitando os horários fixos definidos para toda a escola.
+- **RF18 — Chat com responsáveis:** disponibilizar chat web para atendimento aos responsáveis, respeitando os horários fixos definidos para toda a escola. Fora desses horários, o sistema deverá retornar automaticamente uma mensagem informando os horários de funcionamento.
 - **RF19 — Horários de atendimento:** as janelas de atendimento serão **09h às 10h** e **14h às 15h**, iguais para toda a escola. Não haverá configuração individual de horários por professor.
+- **RF19.1 — Resposta fora do horário:** quando uma mensagem for enviada fora das janelas de atendimento, apresentar resposta automática: “Nosso horário de atendimento é das 09h às 10h e das 14h às 15h. Por favor, entre em contato durante esse período.”
 
 ### 3.4. Monitoramento e relatórios
 
@@ -82,6 +83,7 @@ O controle de acesso deverá ser aplicado no servidor, em cada operação e cons
 - **RN12:** confirmação de leitura de comunicado é obrigatória.
 - **RN13:** as janelas do chat são fixas para toda a escola: 09h–10h e 14h–15h.
 - **RN14:** no fórum, participam somente as pessoas convidadas/chamadas; quem criou a discussão e convidou os participantes é seu moderador.
+- **RN15:** fora das janelas de atendimento do chat, o sistema retorna automaticamente mensagem informando os horários de funcionamento; não há atendimento humano fora desses períodos.
 
 ## 5. Requisitos não funcionais e conformidade
 
@@ -122,14 +124,14 @@ Este catálogo é uma proposta inicial de indicadores usuais para atender à ori
 - **CA08 — Justificativa:** ao informar atestado de cinco dias corridos, o sistema considera todo o intervalo de calendário, mas registra a justificativa de frequência somente nos dias letivos abrangidos.
 - **CA09 — Transferência:** após transferir o aluno, os registros anteriores permanecem vinculados ao histórico do aluno e à turma/período em que foram lançados.
 - **CA10 — Comunicados:** professor, coordenação e direção conseguem publicar; o destinatário precisa confirmar leitura.
-- **CA11 — Chat:** o atendimento respeita as janelas fixas 09h–10h e 14h–15h para toda a escola.
+- **CA11 — Chat:** o atendimento respeita as janelas fixas 09h–10h e 14h–15h para toda a escola; fora delas, o sistema retorna a mensagem automática com os horários.
 - **CA12 — Fórum:** somente convidados participam da discussão; o autor/criador da discussão é seu moderador.
 
 ## 8. Pendências de detalhamento
 
 1. **Transferência:** definir a data efetiva da mudança, turma de origem/destino e tratamento de chamadas ainda não lançadas.
 2. **Chat:** definir o comportamento de mensagens enviadas fora das janelas (bloqueio, fila ou aviso de indisponibilidade).
-3. **Fórum:** definir como são enviados convites, se o convidado pode compartilhar a discussão e se o moderador pode remover participantes/conteúdos.
+3. **Fórum:** definir se o moderador poderá encerrar/reabrir discussões e quais critérios orientam a ocultação de conteúdo; controles básicos propostos na seção de regras de moderação dos wireframes.
 4. **Comunicados:** definir se a confirmação de leitura será exigida de cada responsável individualmente e como tratar responsáveis múltiplos.
 5. **Busca ativa:** detalhar etapas, responsáveis, status e eventual integração com Conselho Tutelar/assistência social.
 6. **Dados anonimizados:** definir técnica de anonimização, limiar mínimo de agregação e prevenção de reidentificação em grupos pequenos.
