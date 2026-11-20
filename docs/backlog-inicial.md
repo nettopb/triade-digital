@@ -1,6 +1,6 @@
 # Backlog inicial — Projeto 10
 
-O projeto será executado individualmente. Todas as atividades de análise, desenvolvimento, testes, documentação e apresentação estão atribuídas a uma única pessoa responsável.
+A composição definida a priori na reunião de 18/11/2026 é de uma dupla. As atividades de análise, desenvolvimento, testes, documentação e apresentação serão organizadas entre os integrantes, com responsabilidades a detalhar no planejamento da equipe.
 
 A visão do produto deve contemplar as funcionalidades da descrição-base. A priorização abaixo organiza as entregas acadêmicas, mas não elimina funcionalidades do escopo pretendido.
 
@@ -49,7 +49,7 @@ A visão do produto deve contemplar as funcionalidades da descrição-base. A pr
 - [ ] Preparar demonstração de 3 a 5 minutos.
 - [ ] Elaborar manual de instalação e manual do usuário.
 - [ ] Consolidar documentação técnica.
-- [ ] Elaborar relatório individual de extensão.
+- [ ] Elaborar relatório de extensão conforme as orientações acadêmicas aplicáveis à equipe.
 
 ## Fluxo Kanban
 
