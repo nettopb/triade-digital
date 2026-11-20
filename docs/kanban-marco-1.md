@@ -1,7 +1,8 @@
 # Kanban — Marco 1
 
 **Projeto:** Tríade Digital  
-**Equipe:** dupla definida a priori na reunião de 18/11/2026  
+**Equipe formal:** usuário responsável pelo projeto e Fabrício Melo (participação *pro forma*, ainda sem atuação efetiva).  
+**Condução atual:** usuário responsável, com apoio do ChatGPT como ferramenta.
 **Prazo do marco:** 02/12/2026, às 19h  
 **Branch de trabalho:** `dev`
 
