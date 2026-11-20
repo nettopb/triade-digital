@@ -1,7 +1,7 @@
 # Kanban — Marco 1
 
 **Projeto:** Tríade Digital  
-**Responsável:** desenvolvimento individual  
+**Equipe:** dupla definida a priori na reunião de 18/11/2026  
 **Prazo do marco:** 02/12/2026, às 19h  
 **Branch de trabalho:** `dev`
 
@@ -9,7 +9,7 @@
 
 `A fazer` → `Em andamento` → `Em revisão/teste` → `Concluído`
 
-Como o projeto é individual, manter poucas tarefas simultâneas: preferencialmente uma tarefa em andamento e uma em revisão.
+A equipe deverá limitar o trabalho em andamento para manter o fluxo previsível, evitando excesso de tarefas simultâneas.
 
 ## Quadro inicial
 
@@ -55,4 +55,4 @@ Ao final de cada ciclo, registrar:
 - Estimativa versus esforço realizado.
 - Impedimentos e decisões pendentes.
 
-Não apresentar velocidade ou produtividade como métrica consolidada com apenas um ciclo e uma pessoa.
+Registrar métricas do fluxo da equipe com cautela; um único ciclo ainda não permite estabelecer uma velocidade estável.
