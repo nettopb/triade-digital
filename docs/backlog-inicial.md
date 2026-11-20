@@ -23,6 +23,7 @@ A visão do produto deve contemplar as funcionalidades da descrição-base. A pr
 - [Wireframes de baixa fidelidade](wireframes-baixa-fidelidade.md)
 - [Modelo inicial de dados](modelo-dados-inicial.md)
 - [Kanban do Marco 1](kanban-marco-1.md)
+- [Cronograma de encontros e marcos](cronograma-encontros.md)
 
 ## Marco 2 — 13/01/2027 às 19h
 
