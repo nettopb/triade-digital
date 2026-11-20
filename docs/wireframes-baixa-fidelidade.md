@@ -187,7 +187,7 @@ Os desenhos representam estrutura e hierarquia das telas, não o layout visual d
 +--------------------------------------------------------------+
 ~~~
 
-**Comportamento:** o alerta aparece ao atingir três faltas consecutivas. A coordenação visualiza os alunos da escola e registra/acompanhada as ações de busca ativa. Os demais perfis recebem somente indicadores previstos na matriz.
+**Comportamento:** o alerta aparece ao atingir três faltas consecutivas. A coordenação visualiza os alunos da escola e registra e acompanha as ações de busca ativa. Os demais perfis recebem somente indicadores previstos na matriz.
 
 ## 10. Comunicados e confirmação de leitura
 
