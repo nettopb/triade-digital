@@ -61,7 +61,7 @@ O controle de acesso deverá ser aplicado no servidor, em cada operação e cons
 
 ### 3.5. Orientação de estudos
 
-- **RF27 — Fórum de orientação de estudos:** disponibilizar fórum em que participa quem for chamado/convidado para a discussão. A pessoa que criar/chamar os participantes será responsável pela moderação daquele espaço/discussão.
+- **RF27 — Fórum de orientação de estudos:** disponibilizar fórum em que participa quem for chamado/convidado para a discussão. A pessoa que criar/chamar os participantes será responsável pela moderação daquele espaço/discussão, podendo convidar participantes, revogar convites pendentes, remover participantes, ocultar/reativar mensagens inadequadas e encerrar/reabrir a discussão. As ações de moderação deverão ser auditáveis.
 
 ### 3.6. Documentos escolares
 
