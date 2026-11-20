@@ -41,10 +41,8 @@ O ambiente local inicial será XAMPP com PHP e MySQL. Dados utilizados durante o
 ## Organização do desenvolvimento
 ## Organização da equipe
 
-- **Responsável pela condução e execução:** usuário responsável pelo projeto, que seguirá coordenando o planejamento e tocando as atividades com apoio do ChatGPT.
-- **Segundo integrante indicado:** Fabrício Melo. Sua participação está registrada de forma *pro forma*; até o momento, não houve comparecimento nem atuação efetiva nas atividades do projeto.
-- **Distribuição prática atual:** planejamento, decisões, desenvolvimento, testes e documentação estão sendo conduzidos pelo responsável pelo projeto, com apoio do ChatGPT como ferramenta. Não atribuir entregas ou contribuições realizadas a Fabrício enquanto não houver participação efetiva.
-- **Revisão:** caso Fabrício passe a participar, as responsabilidades poderão ser redistribuídas e o registro atualizado.
+- **Responsável:** Paulo Bezerra Netto.
+- **Segundo integrante indicado:** Fabrício Melo.
 
 As atividades, decisões e entregas serão acompanhadas por meio de issues, backlog e quadro Kanban no GitHub.
 
