@@ -164,7 +164,15 @@ A tela deve oferecer acesso à justificativa: flag de falta justificada, descri�
 +--------------------------------------------------------------+
 ```
 
-**Comportamento:** somente pessoas convidadas participam. O criador da discussão, que realizou os convites, é o moderador. Os controles específicos de moderação permanecem pendentes de detalhamento.
+**Comportamento e controles de moderação:** somente pessoas convidadas participam. O criador da discussão, responsável pelos convites, é o moderador. Ele poderá:
+
+- convidar participantes;
+- revogar convites ainda não aceitos;
+- remover participantes da discussão;
+- ocultar uma mensagem inadequada, informando o motivo, e reativá-la quando cabível;
+- encerrar e reabrir a discussão.
+
+As ações de moderação devem ser registradas em histórico de auditoria, com moderador, ação, data/hora e motivo quando aplicável. Participantes comuns podem publicar mensagens e respostas, mas não administrar convites nem moderar conteúdos.
 
 ## 10. Calendário escolar e justificativas
 
@@ -184,7 +192,23 @@ A tela deve oferecer acesso à justificativa: flag de falta justificada, descri�
 
 **Comportamento:** a duração inclui sábados, domingos, feriados e dias sem aula. A justificativa só gera/associa registros de frequência nas datas letivas com frequência prevista; não deve criar registros em dias sem aula.
 
-## 11. Princípios de usabilidade considerados
+## 11. Chat com responsáveis
+
+```text
++--------------------------------------------------------------+
+| CHAT COM RESPONSÁVEIS                                        |
+| Horário de atendimento: 09h–10h e 14h–15h                    |
+|--------------------------------------------------------------|
+| Conversa                                                     |
+| [Histórico de mensagens]                                     |
+|                                                              |
+| [Digite sua mensagem___________________________] [Enviar]    |
++--------------------------------------------------------------+
+```
+
+**Comportamento:** durante as janelas de atendimento, o chat funciona normalmente. Fora delas, ao receber tentativa de envio, o sistema retorna automaticamente: “Nosso horário de atendimento é das 09h às 10h e das 14h às 15h. Por favor, entre em contato durante esse período.” Não foi definida fila de mensagens nem promessa de resposta posterior.
+
+## 12. Princípios de usabilidade considerados
 
 - Consistência de cabeçalho, menu lateral, botões e nomenclaturas.
 - Reconhecimento em vez de memorização: rótulos explícitos e filtros visíveis.
@@ -193,7 +217,7 @@ A tela deve oferecer acesso à justificativa: flag de falta justificada, descri�
 - Acessibilidade: contraste adequado, navegação por teclado, rótulos associados aos campos e mensagens que não dependam apenas de cor.
 - Simplicidade: apresentar apenas ações pertinentes ao perfil do usuário.
 
-## 10. Pontos para validação
+## 13. Pontos para validação
 
 1. Quais perfis podem cadastrar, editar e inativar alunos?
 2. Quem pode lançar, corrigir e consultar frequência?
@@ -201,4 +225,5 @@ A tela deve oferecer acesso à justificativa: flag de falta justificada, descri�
 4. Quem recebe e acompanha alertas?
 5. Comunicados exigem aprovação? É necessário registrar leitura?
 6. Quais indicadores são úteis para cada perfil?
+7. Confirmar se os controles de moderação propostos atendem à dinâmica do fórum.
 
