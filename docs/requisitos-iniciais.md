@@ -137,7 +137,7 @@ Este catálogo é uma proposta inicial de indicadores usuais para atender à ori
 
 ## 9. Priorização e escopo
 
-A descrição do projeto apresenta as funcionalidades listadas neste documento como parte da solução pretendida. A divisão entre MVP, entregas posteriores e itens demonstrativos deverá ser feita no backlog, considerando os marcos acadêmicos e a capacidade de desenvolvimento individual. Não se deve excluir uma funcionalidade da visão do produto apenas por ela não entrar na primeira entrega.
+A descrição do projeto apresenta as funcionalidades listadas neste documento como parte da solução pretendida. A divisão entre MVP, entregas posteriores e itens demonstrativos deverá ser feita no backlog, considerando os marcos acadêmicos, a capacidade da equipe e a priorização das entregas. Não se deve excluir uma funcionalidade da visão do produto apenas por ela não entrar na primeira entrega.
 
 ## 10. Referências legais
 
