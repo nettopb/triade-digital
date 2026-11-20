@@ -111,7 +111,9 @@ Os desenhos abaixo representam estrutura e hierarquia das telas, não o layout v
 +--------------------------------------------------------------+
 ```
 
-**Comportamento:** registrar frequência por turma e data; impedir duplicidade para o mesmo aluno/turma/data, conforme regra a definir; registrar usuário responsável pelo lançamento e data/hora da operação.
+**Comportamento:** todos os alunos iniciam como presentes; o professor desmarca os ausentes e salva. A coordenação não faz lançamento inicial. Professor e coordenação podem corrigir frequência já lançada, dentro de seus escopos, com registro de auditoria (valor anterior, novo valor, usuário, data/hora e motivo). A secretaria apenas consulta; a direção não altera.
+
+A tela deve oferecer acesso à justificativa: flag de falta justificada, descrição, data inicial e duração em dias corridos. O sistema considera o calendário completo para contar a duração, mas aplica a justificativa somente às datas com aula prevista.
 
 ## 7. Alertas de frequência
 
@@ -127,7 +129,7 @@ Os desenhos abaixo representam estrutura e hierarquia das telas, não o layout v
 +--------------------------------------------------------------+
 ```
 
-**Pendente de validação:** quantidade de faltas consecutivas que gera alerta, tratamento de falta justificada, janela de cálculo, destinatários e procedimento de acompanhamento.
+**Regra definida:** exibir alerta ao atingir 3 faltas consecutivas. A coordenação consulta o histórico e registra o acompanhamento/busca ativa.
 
 ## 8. Comunicados
 
@@ -144,7 +146,45 @@ Os desenhos abaixo representam estrutura e hierarquia das telas, não o layout v
 
 **Comportamento:** criar comunicado, definir público-alvo autorizado, publicar e arquivar. Regras de aprovação e confirmação de leitura ainda precisam ser validadas.
 
-## 9. Princípios de usabilidade considerados
+## 9. Fórum de orientação de estudos
+
+```text
++--------------------------------------------------------------+
+| FÓRUM DE ESTUDOS                         [ + Nova discussão ] |
+| Minhas discussões / Convites recebidos                       |
+|--------------------------------------------------------------|
+| Discussão: Orientação para avaliação                         |
+| Criada por: Usuário responsável                              |
+| Participantes convidados: [lista de participantes]          |
+|--------------------------------------------------------------|
+| Mensagens e respostas                                        |
+| [Escreva sua contribuição________________________] [Enviar]  |
+|--------------------------------------------------------------|
+| Moderação (somente criador): [Gerenciar participantes]       |
++--------------------------------------------------------------+
+```
+
+**Comportamento:** somente pessoas convidadas participam. O criador da discussão, que realizou os convites, é o moderador. Os controles específicos de moderação permanecem pendentes de detalhamento.
+
+## 10. Calendário escolar e justificativas
+
+```text
++--------------------------------------------------------------+
+| CALENDÁRIO / JUSTIFICATIVA                                   |
+| Aluno: [________________________]                            |
+| Início: [__/__/____] Duração (dias corridos): [___]          |
+| Descrição: [___________________________________________]     |
+| Intervalo calculado: [__/__/____] até [__/__/____]           |
+|--------------------------------------------------------------|
+| Dias letivos abrangidos: [lista de datas]                    |
+| Dias sem aula no intervalo: [lista informativa]              |
+|                                      [Salvar justificativa]  |
++--------------------------------------------------------------+
+```
+
+**Comportamento:** a duração inclui sábados, domingos, feriados e dias sem aula. A justificativa só gera/associa registros de frequência nas datas letivas com frequência prevista; não deve criar registros em dias sem aula.
+
+## 11. Princípios de usabilidade considerados
 
 - Consistência de cabeçalho, menu lateral, botões e nomenclaturas.
 - Reconhecimento em vez de memorização: rótulos explícitos e filtros visíveis.
