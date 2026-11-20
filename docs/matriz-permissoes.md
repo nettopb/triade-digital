@@ -60,7 +60,6 @@ Esta matriz consolida as regras informadas para os cinco perfis. O controle deve
 - Quem cadastra usuários, atribui perfis e vincula professores às turmas?
 - Quais consultas individuais de alunos a direção poderá acessar além dos indicadores consolidados?
 - Quem pode configurar/gerenciar comunicados institucionais e consultar confirmações de leitura em cada nível?
-- Qual o comportamento do chat fora dos horários fixos (bloqueio, fila ou aviso)?
 - Como será realizado o convite ao fórum e quais controles o moderador terá?
 - Quais perfis podem administrar turmas e matrículas?
 - Quem pode emitir relatórios/exportações não anonimizados nos perfis escolares, respeitando as permissões já definidas?
