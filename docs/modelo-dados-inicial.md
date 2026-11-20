@@ -132,6 +132,30 @@ erDiagram
 7. Quais campos de responsável são necessários e autorizados?
 8. Comunicados serão gerais, por turma ou por perfil?
 
-## 5. Próxima etapa
+## 5. Entidades complementares propostas para as regras já definidas
+
+As entidades abaixo complementam o modelo conceitual para suportar calendário escolar, justificativas, auditoria e funcionalidades de comunicação. Os campos são propostas iniciais e deverão ser refinados antes do SQL definitivo.
+
+| Entidade | Campos principais propostos | Finalidade |
+|---|---|---|
+| CALENDARIO_ESCOLAR | id, escola_id, ano_letivo, descricao | Identificar o calendário aplicável à escola e ao ano letivo. |
+| DIA_CALENDARIO | id, calendario_id, data, tipo_dia, possui_aula | Registrar dias letivos, feriados, recessos e dias sem aula. |
+| JUSTIFICATIVA | id, aluno_id, data_inicio, duracao_dias_corridos, descricao, usuario_id, criado_em | Guardar a justificativa e seu intervalo em dias corridos. |
+| AUDITORIA_FREQUENCIA | id, frequencia_id, usuario_id, valor_anterior, valor_novo, motivo, alterado_em | Manter histórico de cada correção de frequência. |
+| COMUNICADO_LEITURA | id, comunicado_id, responsavel_id, confirmado_em | Registrar a confirmação individual de leitura do comunicado. |
+| DISCUSSAO_FORUM | id, criador_usuario_id, titulo, conteudo, criado_em, status | Representar a discussão criada e moderada por quem convidou. |
+| CONVITE_FORUM | id, discussao_id, usuario_convidado_id, convidado_por_id, status, enviado_em, respondido_em | Controlar quem foi convidado e se aceitou participar. |
+| PARTICIPACAO_FORUM | id, discussao_id, usuario_id, entrou_em, status | Registrar participantes autorizados na discussão. |
+
+### Regras de relacionamento e processamento
+
+- A data inicial e a duração da justificativa definem um intervalo de calendário; o sistema calcula a data final considerando dias corridos.
+- A aplicação da justificativa à frequência consulta DIA_CALENDARIO e alcança somente dias com possui_aula = true. Não criar frequência em fins de semana, feriados ou dias sem aula.
+- Cada correção gera um registro em AUDITORIA_FREQUENCIA, sem sobrescrever o histórico de alterações.
+- A transferência encerra o vínculo anterior em MATRICULA_TURMA e inicia outro vínculo, preservando FREQUENCIA associada à turma original e à data em que ocorreu.
+- A confirmação de leitura deve ser registrada por destinatário/responsável, permitindo identificar pendências quando houver mais de um responsável vinculado ao aluno.
+- Somente usuários convidados podem integrar a discussão. O criador da discussão, responsável pelos convites, recebe a permissão de moderação.
+
+## 6. Próxima etapa
 
 Após validar as regras, converter este modelo em modelo lógico definitivo e script SQL de criação. Não utilizar dados reais de menores no ambiente acadêmico sem autorização institucional e controles adequados de privacidade e segurança.
