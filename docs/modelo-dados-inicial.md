@@ -145,7 +145,8 @@ As entidades abaixo complementam o modelo conceitual para suportar calendário e
 | COMUNICADO_LEITURA | id, comunicado_id, responsavel_id, confirmado_em | Registrar a confirmação individual de leitura do comunicado. |
 | DISCUSSAO_FORUM | id, criador_usuario_id, titulo, conteudo, criado_em, status | Representar a discussão criada e moderada por quem convidou. |
 | CONVITE_FORUM | id, discussao_id, usuario_convidado_id, convidado_por_id, status, enviado_em, respondido_em | Controlar quem foi convidado e se aceitou participar. |
-| PARTICIPACAO_FORUM | id, discussao_id, usuario_id, entrou_em, status | Registrar participantes autorizados na discussão. |
+| PARTICIPACAO_FORUM | id, discussao_id, usuario_id, entrou_em, status, removido_em, removido_por_id | Registrar participantes autorizados e eventual remoção pelo moderador. |
+| MODERACAO_FORUM | id, discussao_id, usuario_moderador_id, tipo_acao, mensagem_id, participante_id, motivo, criado_em | Auditar convites revogados, remoções, ocultação/reativação de mensagens e encerramento/reabertura de discussões. |
 
 ### Regras de relacionamento e processamento
 
