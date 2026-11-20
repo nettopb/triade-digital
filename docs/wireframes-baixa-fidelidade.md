@@ -230,11 +230,11 @@ Não foi definida fila de mensagens nem promessa de resposta posterior. A Secret
 
 ~~~text
 +--------------------------------------------------------------+
-| FÓRUM DE ESTUDOS                         [ + Nova discussão ] |
+| FÓRUM DE ESTUDOS                   [ + Nova discussão, se autorizado ] |
 | Minhas discussões / Convites recebidos                       |
 |--------------------------------------------------------------|
 | Discussão: Orientação para avaliação                         |
-| Criada por: Usuário responsável                              |
+| Criada por: [nome do criador]                                |
 | Participantes convidados: [lista]                            |
 |--------------------------------------------------------------|
 | Mensagens e respostas                                        |
@@ -246,7 +246,7 @@ Não foi definida fila de mensagens nem promessa de resposta posterior. A Secret
 
 **Comportamento e permissões:**
 
-- Participa somente quem foi convidado/chamado para a discussão.
+- Participa somente quem foi convidado/chamado para a discussão. A permissão para iniciar/criar discussões ainda depende de definição institucional.
 - O criador da discussão, responsável por convidar os participantes, é o moderador.
 - O moderador pode convidar participantes, revogar convites pendentes, remover participantes, ocultar/reativar mensagens inadequadas e encerrar/reabrir a discussão.
 - Participantes comuns podem publicar mensagens e respostas, mas não administrar convites nem moderar.
