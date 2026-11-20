@@ -15,11 +15,11 @@ Esta matriz consolida as regras informadas para os cinco perfis. O controle deve
 | Gerenciar turmas/matrículas | Não definido | Não definido | Não definido | Não definido | Não |
 | Publicar comunicados | Sim | Sim | Sim | Não | Não |
 | Consultar confirmação de leitura | Comunicados publicados/escopo autorizado | Escopo da escola | Comunicados institucionais e indicadores de engajamento | Não definido | Somente indicadores agregados/anonimizados |
-| Chat com responsáveis | Dentro dos horários fixos da escola | Conforme necessidade e autorização a detalhar | Conforme necessidade e autorização a detalhar | Não definido | Não |
+| Chat com responsáveis | Dentro dos horários fixos; resposta automática fora deles | Dentro dos horários fixos; resposta automática fora deles | Dentro dos horários fixos; resposta automática fora deles | Conforme autorização a detalhar | Não |
 | Painel de evasão/busca ativa | Não definido | Sim, escopo da escola | Indicadores consolidados, conforme relatório | Não | Somente indicadores agregados/anonimizados |
 | Relatórios | Frequência, notas, conteúdos e ocorrências das próprias turmas | Frequência, faltas, alertas, justificativas e busca ativa da escola | Indicadores consolidados da escola e engajamento | Dados cadastrais, matrícula, frequência consultável e boletins | Indicadores agregados/anonimizados por escola/região/rede |
 | Exportar dados | Não definido | Não definido | Não definido | Não definido | Sim, somente agregados/anonimizados |
-| Fórum de estudos | Participa se convidado; modera se for quem criou/convidou | Participa se convidada; modera se for quem criou/convidou | Participa se convidada; modera se for quem criou/convidou | Participa se convidada; modera se for quem criou/convidou | Participa se convidada; modera se for quem criou/convidou |
+| Fórum de estudos | Participa se convidado; criador modera suas discussões (convites, remoções, ocultação/reativação e encerramento) | Participa se convidada; criador modera suas discussões | Participa se convidada; criador modera suas discussões | Participa se convidada; criador modera suas discussões | Participa se convidada; criador modera suas discussões |
 | Emitir boletim PDF | Não definido | Não definido | Não definido | Sim | Não |
 
 ## 2. Regras obrigatórias já definidas
